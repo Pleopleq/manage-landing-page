@@ -1,0 +1,11 @@
+$primary-font: 'Be Vietnam', sans-serif;
+
+*{
+    padding:0;
+    margin:0;
+}
+      
+html{
+    font-size: 16px;
+    font-family: $primary-font;
+}
