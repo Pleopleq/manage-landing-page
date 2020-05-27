@@ -1,3 +1,9 @@
+@use './util/variables' as *;
+
 .blockHero{
-    width: 24rem;
+    display: grid;
+    .blockHero__hero{
+        width: 21rem;
+        padding: 1rem;
+    }
 }

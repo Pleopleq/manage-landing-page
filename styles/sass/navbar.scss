@@ -1,3 +1,16 @@
+@use './util/variables' as *;
+
 .blockNavBar{
-    background-color: green;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5rem;
+    .blockNavBar__hamMenu{
+        display: flex;
+        justify-self: flex-end;
+    }
+    .blockNavBar__list{
+        list-style-type: none;
+        display: none;
+    }
 }
+

@@ -6,18 +6,57 @@
 html {
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
+  background-color: #fafafa;
 }
 
 .blockNavBar {
-  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1.5rem;
+}
+.blockNavBar .blockNavBar__hamMenu {
+  display: flex;
+  justify-self: flex-end;
+}
+.blockNavBar .blockNavBar__list {
+  list-style-type: none;
+  display: none;
 }
 
 .blockHero {
-  width: 24rem;
+  display: grid;
+}
+.blockHero .blockHero__hero {
+  width: 21rem;
+  padding: 1rem;
 }
 
 .blockCTA {
-  background-color: green;
+  display: grid;
+  margin: 0rem 2rem 2rem 2rem;
+}
+.blockCTA .blockCTA__title {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #242d52;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+}
+.blockCTA .blockCTA__description {
+  text-align: center;
+  font-weight: 400;
+  color: #9095a7;
+  padding-bottom: 1.5rem;
+}
+.blockCTA .blockCTA__getStarted {
+  background-color: #f25f3a;
+  color: #fafafa;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 400;
+  padding: 0.6em 2em 0.6em 2em;
+  margin: 0 6.5em 0 6.5em;
+  border-radius: 2rem;
+  border: none;
 }
 
 /*# sourceMappingURL=style.scss.map */

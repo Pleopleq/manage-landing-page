@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+*{
+    padding:0;
+    margin:0;
+}
+        
+html{
+    font-size: $primary-font-size;
+    font-family: $primary-font;
+    background-color: $very-light-gray;
+}
+
