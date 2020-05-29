@@ -1,2 +1,36 @@
 @use './util/variables' as *;
 
+.blockQuotes{
+    display: grid;
+    margin: 1rem;
+    .blockQuotes__title{
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bolder;
+        padding-bottom: 6rem;
+        color: $very-dark-blue;
+    }
+}
+
+.blockQuote{
+    background-color: whitesmoke;
+    position: relative;
+    text-align: center;
+    padding:4rem 0.5rem 4rem 0.5rem;
+    margin-bottom: 2rem;
+    .blockQuote__personAvatar{
+        position: absolute;
+        top: -1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 5.5rem;
+    }
+    .blockQuote__personName{
+        font-weight: 700;
+        padding-bottom: 1rem;
+        color: $very-dark-blue;
+    }
+    .blockQuote__personQuote{
+        color:$dark-grayish-blue;
+    }
+}
