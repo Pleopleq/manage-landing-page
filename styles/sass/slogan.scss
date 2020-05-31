@@ -1,2 +1,22 @@
 @use './util/variables' as *;
 
+.blockSlogan{
+    display: grid;
+    background-color: $bright-red;
+    background-image: url(../../images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    color: $very-light-gray;
+    padding: 7rem 2rem 7rem 2rem;
+    .blockSlogan__main{
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+    .blockSlogan__getStarted{
+        @extend .CTAbutton;
+        background-color: $very-light-gray;
+        color: $bright-red;
+        margin: 0 auto;
+    }
+}

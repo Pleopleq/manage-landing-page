@@ -1,3 +1,14 @@
+.CTAbutton, .blockSlogan .blockSlogan__getStarted, .blockQuotes .blockQuotes__getStarted, .blockCTA .blockCTA__getStarted {
+  background-color: #f25f3a;
+  color: #fafafa;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 700;
+  padding: 0.6em 2em 0.6em 2em;
+  margin: 0 6.5em 0 6.5em;
+  border-radius: 2rem;
+  border: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,10 +20,27 @@ html {
   background-color: #fafafa;
 }
 
+body {
+  background-image: url(../../../images/bg-tablet-pattern.svg);
+  background-size: 28rem;
+  background-origin: border-box;
+  background-clip: border-box;
+  background-position-x: 70px;
+  background-position-y: -140px;
+  background-repeat: no-repeat;
+}
+
 .blockNavBar {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 1.5rem;
+  padding-top: 1.5rem;
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
+}
+.blockNavBar .blockNavBar__logo {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-end;
+  width: 6.5rem;
 }
 .blockNavBar .blockNavBar__hamMenu {
   display: flex;
@@ -33,7 +61,11 @@ html {
 
 .blockCTA {
   display: grid;
-  margin: 0rem 2rem 2rem 2rem;
+  background-image: url(../../../images/bg-tablet-pattern.svg);
+  background-size: 22rem;
+  background-position-x: -120px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
 }
 .blockCTA .blockCTA__title {
   font-size: 2.2rem;
@@ -46,17 +78,10 @@ html {
   text-align: center;
   font-weight: 400;
   color: #9095a7;
-  padding-bottom: 1.5rem;
+  padding: 0rem 2rem 2rem 2rem;
 }
 .blockCTA .blockCTA__getStarted {
-  background-color: #f25f3a;
-  color: #fafafa;
-  font-family: "Be Vietnam", sans-serif;
-  font-weight: 400;
-  padding: 0.6em 2em 0.6em 2em;
-  margin: 0 6.5em 0 6.5em;
-  border-radius: 2rem;
-  border: none;
+  margin-bottom: 3rem;
 }
 
 .blockFunctions {
@@ -104,7 +129,7 @@ html {
 
 .blockQuotes {
   display: grid;
-  margin: 1rem;
+  margin: 1rem 1rem 2.5rem 1rem;
 }
 .blockQuotes .blockQuotes__title {
   text-align: center;
@@ -113,7 +138,30 @@ html {
   padding-bottom: 6rem;
   color: #1d1e25;
 }
-
+.blockQuotes .blockQuotes__navDots {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+.blockQuotes .blockQuotes__navDots .blockQuotes__navDots-dot {
+  /* Rounded border */
+  border-radius: 9999px;
+  height: 6px;
+  width: 6px;
+  /* Active dot */
+  background-color: #f25f3a;
+  /* Inactive dot */
+  background-color: transparent;
+  border: 1px solid #f25f3a;
+  /* OPTIONAL: Spacing between dots */
+  margin: 0 3px;
+}
 .blockQuote {
   background-color: whitesmoke;
   position: relative;
@@ -135,6 +183,26 @@ html {
 }
 .blockQuote .blockQuote__personQuote {
   color: #9095a7;
+}
+
+.blockSlogan {
+  display: grid;
+  background-color: #f25f3a;
+  background-image: url(../../images/bg-simplify-section-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  color: #fafafa;
+  padding: 7rem 2rem 7rem 2rem;
+}
+.blockSlogan .blockSlogan__main {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.blockSlogan .blockSlogan__getStarted {
+  background-color: #fafafa;
+  color: #f25f3a;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.scss.map */

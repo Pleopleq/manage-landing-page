@@ -1,0 +1,32 @@
+@use './util/variables' as *;
+.blockNavBar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-top: 1.5rem;
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.blockNavBar .blockNavBar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 6.5rem;
+}
+
+.blockNavBar .blockNavBar__hamMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+}
+
+.blockNavBar .blockNavBar__list {
+  list-style-type: none;
+  display: none;
+}
+/*# sourceMappingURL=navbar.css.map */

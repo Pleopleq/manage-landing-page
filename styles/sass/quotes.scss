@@ -2,13 +2,40 @@
 
 .blockQuotes{
     display: grid;
-    margin: 1rem;
+    margin: 1rem 1rem 2.5rem 1rem;
     .blockQuotes__title{
         text-align: center;
         font-size: 2.2rem;
         font-weight: bolder;
         padding-bottom: 6rem;
         color: $very-dark-blue;
+    }
+    .blockQuotes__navDots{
+        /* Center the content */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        /* Reset styles */
+        list-style-type: none;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        padding: 0;
+        .blockQuotes__navDots-dot{
+            /* Rounded border */
+            border-radius: 9999px;
+            height: 6px;
+            width: 6px;
+            /* Active dot */
+            background-color:$bright-red;
+            /* Inactive dot */
+            background-color: transparent;
+            border: 1px solid $bright-red;
+            /* OPTIONAL: Spacing between dots */
+            margin: 0 3px;
+        }
+    }
+    .blockQuotes__getStarted{
+        @extend .CTAbutton;
     }
 }
 

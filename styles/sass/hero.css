@@ -1,0 +1,11 @@
+@use './util/variables' as *;
+.blockHero {
+  display: -ms-grid;
+  display: grid;
+}
+
+.blockHero .blockHero__hero {
+  width: 21rem;
+  padding: 1rem;
+}
+/*# sourceMappingURL=hero.css.map */

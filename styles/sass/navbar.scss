@@ -3,7 +3,14 @@
 .blockNavBar{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1.5rem;
+    padding-top: 1.5rem;
+    margin: 0rem 1.5rem 1.5rem 1.5rem;
+    .blockNavBar__logo{
+        display: flex;
+        justify-self: flex-start;
+        align-self: flex-end;
+        width: 6.5rem;
+    }
     .blockNavBar__hamMenu{
         display: flex;
         justify-self: flex-end;
