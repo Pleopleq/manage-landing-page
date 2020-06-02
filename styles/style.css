@@ -9,25 +9,28 @@ html {
   background-color: #fafafa;
 }
 
-body {
-  background-image: url(../../../images/bg-tablet-pattern.svg);
-  background-size: 28rem;
-  background-origin: border-box;
-  background-clip: border-box;
-  background-position-x: 70px;
-  background-position-y: -140px;
-  background-repeat: no-repeat;
-}
-
 .CTAbutton, .blockSlogan .blockSlogan__getStarted, .blockQuotes .blockQuotes__getStarted, .blockCTA .blockCTA__getStarted {
   background-color: #f25f3a;
   color: #fafafa;
   font-family: "Be Vietnam", sans-serif;
   font-weight: 700;
-  padding: 0.8em 1.7em 0.8em 1.7em;
+  padding: 0.6em 1.8em 0.6em 1.8em;
   margin: 0 auto;
   border-radius: 2rem;
   border: none;
+}
+
+.artBackground {
+  background-image: url("../../../images/bg-tablet-pattern.svg"), url("../../../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 56px -120px, 242px 520px;
+  background-size: 460px, 300px;
+}
+@media (min-width: 1024px) {
+  .artBackground {
+    background-position: 130% -180px, -80% 50%;
+    background-size: 820px;
+  }
 }
 
 .blockNavBar {
@@ -55,18 +58,11 @@ body {
   display: grid;
 }
 .blockHero .blockHero__hero {
-  width: 21rem;
-  padding: 1rem;
+  width: 100vw;
 }
 
 .blockCTA {
   display: grid;
-  background-image: url(../../../images/bg-tablet-pattern.svg);
-  background-size: 16.5rem;
-  background-position: right;
-  background-position-x: 240px;
-  background-position-y: 80px;
-  background-repeat: no-repeat;
 }
 .blockCTA .blockCTA__title {
   font-size: 2.2rem;
@@ -130,9 +126,12 @@ body {
 
 .blockQuotes {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   margin: 1rem 1rem 2.5rem 1rem;
 }
 .blockQuotes .blockQuotes__title {
+  grid-row-start: 1;
   text-align: center;
   font-size: 2.2rem;
   font-weight: bolder;
@@ -163,6 +162,18 @@ body {
   /* OPTIONAL: Spacing between dots */
   margin: 0 3px;
 }
+.blockQuote__one {
+  display: none;
+}
+
+.blockQuote__three {
+  display: none;
+}
+
+.blockQuote__four {
+  display: none;
+}
+
 .blockQuote {
   background-color: whitesmoke;
   position: relative;

@@ -1,0 +1,11 @@
+.artBackground {
+    background-image: url('../../../images/bg-tablet-pattern.svg'),
+    url('../../../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: 56px -120px, 242px 520px;
+    background-size: 460px, 300px;
+    @media (min-width: 1024px) {
+      background-position: 130% -180px, -80% 50%;
+      background-size: 820px;
+    }
+  }

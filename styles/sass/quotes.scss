@@ -3,8 +3,11 @@
 
 .blockQuotes{
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     margin: 1rem 1rem 2.5rem 1rem;
     .blockQuotes__title{
+        grid-row-start: 1;
         text-align: center;
         font-size: 2.2rem;
         font-weight: bolder;
@@ -40,6 +43,17 @@
     }
 }
 
+.blockQuote__one{
+    display:none;
+}
+
+.blockQuote__three{
+    display:none;
+}
+
+.blockQuote__four{
+    display:none;
+}
 .blockQuote{
     background-color: whitesmoke;
     position: relative;

@@ -11,22 +11,12 @@ html{
     background-color: $very-light-gray;
 }
 
-body{
-    background-image: url(../../../images/bg-tablet-pattern.svg);
-    background-size: 28rem;
-    background-origin: border-box;
-    background-clip: border-box;
-    background-position-x: 70px;
-    background-position-y: -140px ;
-    background-repeat: no-repeat;
-}
-
 .CTAbutton {
     background-color: $bright-red;
     color: $very-light-gray;
     font-family: $primary-font;
     font-weight: 700;
-    padding: 0.8em 1.7em 0.8em 1.7em;
+    padding: 0.6em 1.8em 0.6em 1.8em;
     margin: 0 auto;
     border-radius: 2rem;
     border: none;
