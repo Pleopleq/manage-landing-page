@@ -1,11 +1,13 @@
 @use './util/variables' as *;
+@use './util/root' as *;
 
 .blockCTA{
     display: grid;
     background-image: url(../../../images/bg-tablet-pattern.svg);
-    background-size: 22rem;
-    background-position-x: -120px;
-    background-position-y: 10px;
+    background-size: 16.5rem;
+    background-position: right;
+    background-position-x: 240px;
+    background-position-y: 80px;
     background-repeat: no-repeat;
     .blockCTA__title{
         font-size: 2.2rem;
@@ -22,6 +24,6 @@
     }
     .blockCTA__getStarted{
         @extend .CTAbutton;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 }

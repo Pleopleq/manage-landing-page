@@ -1,4 +1,5 @@
 @use './util/variables' as *;
+@use './util/root' as *;
 
 .blockQuotes{
     display: grid;
