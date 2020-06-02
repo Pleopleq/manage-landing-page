@@ -14,13 +14,15 @@
         padding-bottom: 6rem;
         color: $very-dark-blue;
     }
+
+    //Dot slider styles
+    
     .blockQuotes__navDots{
         /* Center the content */
         align-items: center;
         display: flex;
         justify-content: center;
         /* Reset styles */
-        list-style-type: none;
         margin: 0 auto;
         margin-bottom: 2rem;
         padding: 0;
@@ -30,12 +32,29 @@
             height: 6px;
             width: 6px;
             /* Active dot */
-            background-color:$bright-red;
             /* Inactive dot */
             background-color: transparent;
             border: 1px solid $bright-red;
             /* OPTIONAL: Spacing between dots */
             margin: 0 3px;
+        }
+
+        //Dot slider
+
+        .blockQuotes__navDots-dot:hover{
+            background-color:$bright-red;
+        }
+        #dotOne:checked  {
+            background: $bright-red;
+        }
+        #dotTwo:checked  {
+            background: $bright-red;
+        }
+        #dotThree:checked  {
+            background: $bright-red;
+        }
+        #dotFour:checked  {
+            background: $bright-red;
         }
     }
     .blockQuotes__getStarted{

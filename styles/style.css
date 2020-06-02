@@ -144,7 +144,6 @@ html {
   display: flex;
   justify-content: center;
   /* Reset styles */
-  list-style-type: none;
   margin: 0 auto;
   margin-bottom: 2rem;
   padding: 0;
@@ -155,12 +154,26 @@ html {
   height: 6px;
   width: 6px;
   /* Active dot */
-  background-color: #f25f3a;
   /* Inactive dot */
   background-color: transparent;
   border: 1px solid #f25f3a;
   /* OPTIONAL: Spacing between dots */
   margin: 0 3px;
+}
+.blockQuotes .blockQuotes__navDots .blockQuotes__navDots-dot:hover {
+  background-color: #f25f3a;
+}
+.blockQuotes .blockQuotes__navDots #dotOne:checked {
+  background: #f25f3a;
+}
+.blockQuotes .blockQuotes__navDots #dotTwo:checked {
+  background: #f25f3a;
+}
+.blockQuotes .blockQuotes__navDots #dotThree:checked {
+  background: #f25f3a;
+}
+.blockQuotes .blockQuotes__navDots #dotFour:checked {
+  background: #f25f3a;
 }
 .blockQuote__one {
   display: none;

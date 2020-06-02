@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./styles/style.css">
   <title>Frontend Mentor | Manage landing page</title>
 </head>
-<body>
+<body class="artBackground">
 
 <nav class="blockNavBar">
   <img src="./images/logo.svg" alt="logo" class="blockNavBar__logo">
@@ -21,14 +21,13 @@
     <li>Community</li>
   </ul>
 </nav>
-
     <!-- GRAPHS -->
 
   <section class="blockHero"> 
     <img src="./images/illustration-intro.svg" alt="graphs header" class="blockHero__hero">
   </section>
-
     <!-- CALL TO ACTION -->
+
 
  <section class="blockCTA">
   <h1 class="blockCTA__title">Bring everyone together to build better products.</h1> 
@@ -84,6 +83,7 @@
 
   <section class="blockQuotes">
     <h2 class="blockQuotes__title">What they’ve said</h2>
+  <div class="blockQuote__one">
     <div class="blockQuote">
       <img src="./images/avatar-anisha.png" alt="person avatar" class="blockQuote__personAvatar">
       <p class="blockQuote__personName">Anisha Li</p>
@@ -92,7 +92,8 @@
       visibility on larger milestones at all times keeps everyone motivated.”
       </p>
     </div>
-    
+  </div>
+  <div class="blockQuote__two">
     <div class="blockQuote">
       <img src="./images/avatar-ali.png" alt="person avatar"  class="blockQuote__personAvatar">
       <p class="blockQuote__personName">Ali Bravo</p>
@@ -102,7 +103,9 @@
       more focused.”
       </p>
     </div>
+  </div>
 
+  <div class="blockQuote__three">
     <div class="blockQuote">
       <img src="./images/avatar-richard.png" alt="person avatar" class="blockQuote__personAvatar">
       <p class="blockQuote__personName">Richard Watts</p>
@@ -111,7 +114,9 @@
       and focused. I can’t stop recommending them to everyone I talk to!”
       </p>
     </div>
-    
+  </div>
+
+  <div class="blockQuote__four">
     <div class="blockQuote">
       <img src="./images/avatar-shanai.png" alt="person avatar" class="blockQuote__personAvatar">
       <p class="blockQuote__personName">Shanai Gough</p>
@@ -120,12 +125,14 @@
       from anywhere. It keeps the whole team in-sync without being intrusive.”
       </p>
     </div>
-    <ul class="blockQuotes__navDots">
-      <li class="blockQuotes__navDots-dot"></li>
-      <li class="blockQuotes__navDots-dot"></li>
-      <li class="blockQuotes__navDots-dot"></li>
-      <li class="blockQuotes__navDots-dot"></li>
-    </ul>
+  </div>
+
+    <div class="blockQuotes__navDots">
+      <label for="dotOne" class="blockQuotes__navDots-dot"></label>
+      <label for="dotTwo" class="blockQuotes__navDots-dot"></label>
+      <label for="dotThree" class="blockQuotes__navDots-dot"></label>
+      <label for="dotFour" class="blockQuotes__navDots-dot"></label>
+    </div>
     <button class="blockQuotes__getStarted">Get Started</button>
   </section>
 
