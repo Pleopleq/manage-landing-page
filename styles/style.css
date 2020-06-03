@@ -9,7 +9,7 @@ html {
   background-color: #fafafa;
 }
 
-.CTAbutton, .blockSlogan .blockSlogan__getStarted, .blockQuotes .blockQuotes__getStarted, .blockCTA .blockCTA__getStarted {
+.CTAbutton, .blockFooter .emailUpdates__go, .blockSlogan .blockSlogan__getStarted, .blockQuotes .blockQuotes__getStarted, .blockCTA .blockCTA__getStarted {
   background-color: #f25f3a;
   color: #fafafa;
   font-family: "Be Vietnam", sans-serif;
@@ -128,6 +128,7 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  position: relative;
   margin: 1rem 1rem 2.5rem 1rem;
 }
 .blockQuotes .blockQuotes__title {
@@ -228,6 +229,77 @@ html {
   background-color: #fafafa;
   color: #f25f3a;
   margin: 0 auto;
+}
+
+.blockFooter {
+  background-color: #1d1e25;
+  display: grid;
+}
+.blockFooter .emailUpdates {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: space-evenly;
+}
+.blockFooter .emailUpdates__input {
+  padding: 0.8rem 2rem 0.8rem 1.2rem;
+  border: none;
+  border-radius: 2rem;
+}
+.blockFooter .emailUpdates__input::placeholder {
+  color: #9095a7;
+}
+.blockFooter .emailUpdates__go {
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.blockLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  font-weight: 400;
+  color: #fafafa;
+  text-align: justify;
+}
+.blockLinks .blockLinks__linkRight {
+  grid-area: right;
+  list-style-type: none;
+  margin: 0 auto;
+}
+.blockLinks .blockLinks__linkRight li {
+  padding-bottom: 8px;
+}
+.blockLinks .blockLinks__linkLeft {
+  grid-area: left;
+  list-style-type: none;
+  margin: 0 auto;
+}
+.blockLinks .blockLinks__linkLeft li {
+  padding-bottom: 8px;
+}
+
+.blockSocials {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 20%);
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+.blockSocials .blockSocials__icon img {
+  width: 32px;
+}
+
+.blockCopyright {
+  text-align: center;
+}
+.blockCopyright .blockCopyright__logo {
+  padding-bottom: 2.5rem;
+}
+.blockCopyright .blockCopyright__copyright {
+  font-size: 0.8rem;
+  color: #9095a7;
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.scss.map */

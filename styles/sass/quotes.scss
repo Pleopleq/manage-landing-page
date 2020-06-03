@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    position: relative;
     margin: 1rem 1rem 2.5rem 1rem;
     .blockQuotes__title{
         grid-row-start: 1;
@@ -40,7 +41,6 @@
         }
 
         //Dot slider
-
         .blockQuotes__navDots-dot:hover{
             background-color:$bright-red;
         }
@@ -73,6 +73,7 @@
 .blockQuote__four{
     display:none;
 }
+
 .blockQuote{
     background-color: whitesmoke;
     position: relative;

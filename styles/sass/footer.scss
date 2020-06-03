@@ -1,2 +1,77 @@
 @use './util/variables' as *;
+@use './util/root' as *;
 
+.blockFooter{
+    background-color: $very-dark-blue;
+    display: grid;
+    .emailUpdates{
+        display: flex;
+        padding: 2.5rem;
+        justify-content: space-evenly;
+    }
+    .emailUpdates__input{
+        padding: 0.8rem 2rem 0.8rem 1.2rem;
+        border: none;
+        border-radius: 2rem;
+    }
+    .emailUpdates__input::placeholder{
+        color: $dark-grayish-blue;
+    }
+    .emailUpdates__go{
+        margin-left: 10px;
+        text-transform: uppercase;
+        @extend .CTAbutton;
+    }
+}
+
+.blockLinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'left right';
+    font-weight: 400;
+    color: $very-light-gray;
+    text-align: justify;
+    .blockLinks__linkRight{
+        grid-area: right;
+        list-style-type: none;
+        margin: 0 auto;
+        li{
+            padding-bottom: 8px;
+        }
+    }
+     
+    .blockLinks__linkLeft{
+        grid-area: left;
+        list-style-type: none;
+        margin: 0 auto;
+        li{
+            padding-bottom: 8px;
+        }
+    }
+}
+
+.blockSocials{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 20%);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    .blockSocials__icon{
+        img{
+            width: 32px;
+        }
+    }
+}
+
+.blockCopyright{
+    text-align: center;
+    .blockCopyright__logo{
+        padding-bottom: 2.5rem;
+    }
+    .blockCopyright__copyright{
+        font-size: 0.8rem;
+        color: $dark-grayish-blue;
+        padding-bottom: 2rem;
+    }
+}
