@@ -1,5 +1,6 @@
 @use './util/variables' as *;
 
+
 .blockNavBar{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -14,10 +15,45 @@
     .blockNavBar__hamMenu{
         display: flex;
         justify-self: flex-end;
+
     }
     .blockNavBar__list{
         list-style-type: none;
+        font-weight: 700;
+        color: $very-dark-blue;
+        display: none;
+    }
+
+    .dropdown{
+        position: absolute;
+        width: 16rem;
+        right: -6rem;
+        top: 4rem;
+        opacity: 0;
+        z-index: 3;
+        background: $very-light-gray;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 14rem;
+        margin-top: 2rem;
+        padding: 2rem;
+        transform: translate(-40%);
+        transition: opacity .15s ease-out;
+        box-shadow: 4px 200px 169px 200px rgba(0,0,0,0.22);
         display: none;
     }
 }
 
+.blockNavBar:hover .blockNavBar__hamMenu img{
+    content: url(../../images/icon-close.svg);
+}
+
+.blockNavBar:hover .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+
+}

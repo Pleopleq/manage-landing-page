@@ -4,23 +4,36 @@
 .blockFooter{
     background-color: $very-dark-blue;
     display: grid;
+    width: 100vw;
     .emailUpdates{
-        display: flex;
-        padding: 2.5rem;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        @media (min-width: 375px) {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin:5vw;
+        }
     }
     .emailUpdates__input{
-        padding: 0.8rem 2rem 0.8rem 1.2rem;
+        padding: 0.8rem 0rem 0.8rem 1rem;
         border: none;
         border-radius: 2rem;
+        @media (min-width: 375px) {
+            padding: 0.8rem 1.5rem 0.8rem 1.2rem;
+        }
     }
     .emailUpdates__input::placeholder{
         color: $dark-grayish-blue;
     }
     .emailUpdates__go{
-        margin-left: 10px;
+        margin-left: 2px;
         text-transform: uppercase;
         @extend .CTAbutton;
+        @media (min-width: 375px) {
+            margin-left: 16px;
+        }
     }
 }
 

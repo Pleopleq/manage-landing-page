@@ -51,14 +51,49 @@ html {
 }
 .blockNavBar .blockNavBar__list {
   list-style-type: none;
+  font-weight: 700;
+  color: #1d1e25;
   display: none;
+}
+.blockNavBar .dropdown {
+  position: absolute;
+  width: 16rem;
+  right: -6rem;
+  top: 4rem;
+  opacity: 0;
+  z-index: 3;
+  background: #fafafa;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 14rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  transform: translate(-40%);
+  transition: opacity 0.15s ease-out;
+  box-shadow: 4px 200px 169px 200px rgba(0, 0, 0, 0.22);
+  display: none;
+}
+
+.blockNavBar:hover .blockNavBar__hamMenu img {
+  content: url(../../images/icon-close.svg);
+}
+
+.blockNavBar:hover .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  display: flex;
 }
 
 .blockHero {
   display: grid;
 }
 .blockHero .blockHero__hero {
-  width: 100vw;
+  width: 90vw;
+  padding-top: 1.5rem;
+  margin: 0 auto;
 }
 
 .blockCTA {
@@ -234,23 +269,42 @@ html {
 .blockFooter {
   background-color: #1d1e25;
   display: grid;
+  width: 100vw;
 }
 .blockFooter .emailUpdates {
-  display: flex;
-  padding: 2.5rem;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+@media (min-width: 375px) {
+  .blockFooter .emailUpdates {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 5vw;
+  }
 }
 .blockFooter .emailUpdates__input {
-  padding: 0.8rem 2rem 0.8rem 1.2rem;
+  padding: 0.8rem 0rem 0.8rem 1rem;
   border: none;
   border-radius: 2rem;
+}
+@media (min-width: 375px) {
+  .blockFooter .emailUpdates__input {
+    padding: 0.8rem 1.5rem 0.8rem 1.2rem;
+  }
 }
 .blockFooter .emailUpdates__input::placeholder {
   color: #9095a7;
 }
 .blockFooter .emailUpdates__go {
-  margin-left: 10px;
+  margin-left: 2px;
   text-transform: uppercase;
+}
+@media (min-width: 375px) {
+  .blockFooter .emailUpdates__go {
+    margin-left: 16px;
+  }
 }
 
 .blockLinks {
