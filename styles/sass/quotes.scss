@@ -62,16 +62,9 @@
     }
 }
 
-.blockQuote__one{
-    display:none;
-}
-
-.blockQuote__three{
-    display:none;
-}
-
-.blockQuote__four{
-    display:none;
+.blockQuote__slides{
+    display: none;
+    text-align: center; 
 }
 
 .blockQuote{
@@ -95,4 +88,12 @@
     .blockQuote__personQuote{
         color:$dark-grayish-blue;
     }
+}
+
+.active, .dot:hover {
+    background-color: $bright-red;
+}
+
+.translateQuote{
+    background-color: red;
 }

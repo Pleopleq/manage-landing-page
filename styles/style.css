@@ -89,6 +89,7 @@ html {
 
 .blockHero {
   display: grid;
+  width: 100vw;
 }
 .blockHero .blockHero__hero {
   width: 90vw;
@@ -211,16 +212,9 @@ html {
 .blockQuotes .blockQuotes__navDots #dotFour:checked {
   background: #f25f3a;
 }
-.blockQuote__one {
+.blockQuote__slides {
   display: none;
-}
-
-.blockQuote__three {
-  display: none;
-}
-
-.blockQuote__four {
-  display: none;
+  text-align: center;
 }
 
 .blockQuote {
@@ -244,6 +238,14 @@ html {
 }
 .blockQuote .blockQuote__personQuote {
   color: #9095a7;
+}
+
+.active, .dot:hover {
+  background-color: #f25f3a;
+}
+
+.translateQuote {
+  background-color: red;
 }
 
 .blockSlogan {
@@ -274,37 +276,28 @@ html {
 .blockFooter .emailUpdates {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 @media (min-width: 375px) {
   .blockFooter .emailUpdates {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin: 5vw;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .blockFooter .emailUpdates__input {
-  padding: 0.8rem 0rem 0.8rem 1rem;
+  padding: 1rem 0rem 0.8rem 1.5rem;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
   border: none;
   border-radius: 2rem;
-}
-@media (min-width: 375px) {
-  .blockFooter .emailUpdates__input {
-    padding: 0.8rem 1.5rem 0.8rem 1.2rem;
-  }
 }
 .blockFooter .emailUpdates__input::placeholder {
   color: #9095a7;
 }
 .blockFooter .emailUpdates__go {
-  margin-left: 2px;
   text-transform: uppercase;
-}
-@media (min-width: 375px) {
-  .blockFooter .emailUpdates__go {
-    margin-left: 16px;
-  }
+  margin-right: 1rem;
 }
 
 .blockLinks {
