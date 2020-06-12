@@ -33,11 +33,11 @@
         display: none;
         color: $dark-blue;
         font-weight: 700;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         @media (min-width: 1024px) {
             display: flex;
             justify-content: space-around;
-            align-items: flex-end;
+            align-items: center;
             list-style-type: none;
          }
     }
