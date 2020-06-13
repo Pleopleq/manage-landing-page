@@ -11,6 +11,8 @@
     border-radius: 2rem;
     border: none;
     display: none;
+    -webkit-box-shadow: -25px 5px 48px -8px  $bright-red;
+    box-shadow: -25px 5px 48px -8px  $bright-red;
     @media (min-width: 1024px) {
         display: flex;
         grid-area: right;

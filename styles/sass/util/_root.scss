@@ -9,6 +9,7 @@ html{
     font-size: $primary-font-size;
     font-family: $primary-font;
     background-color: $very-light-gray;
+    box-sizing: content-box;
     @media (min-width: 1024px) {
         font-size: 18px;
      }
@@ -27,4 +28,6 @@ html{
     margin: 0 auto;
     border-radius: 2rem;
     border: none;
+    -webkit-box-shadow: -25px 5px 48px -9px  $bright-red;
+    box-shadow: -25px 5px 48px -9px  $bright-red;
 }
