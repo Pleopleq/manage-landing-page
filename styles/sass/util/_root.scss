@@ -9,7 +9,22 @@ html{
     font-size: $primary-font-size;
     font-family: $primary-font;
     background-color: $very-light-gray;
+    box-sizing: content-box;
+    width: 100%;
+    @media (min-width: 1024px) {
+        font-size: 18px;
+     }
+    @media (min-width: 1440px) {
+        font-size: 22px;
+    }
+    @media (min-width: 1600px) {
+        font-size: 24px;
+    }
+    @media (min-width: 2560px) {
+        font-size: 26px;
+    }
 }
+
 
 .CTAbutton {
     background-color: $bright-red;
@@ -20,4 +35,5 @@ html{
     margin: 0 auto;
     border-radius: 2rem;
     border: none;
+    box-shadow: -5px 5px 48px -9px  $bright-red;
 }

@@ -2,7 +2,17 @@
 
 .blockHero{
     display: grid;
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "left right";
+     }
     .blockHero__hero{
         width: 100vw;
+        padding-top: 1.5rem;
+        margin: 0 auto;
+        @media (min-width: 1024px) {
+            width: 45vw;
+            grid-area: right;
+        }
     }
 }
