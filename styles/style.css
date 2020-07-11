@@ -7,6 +7,8 @@ html {
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
   background-color: #fafafa;
+  box-sizing: content-box;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   html {
@@ -15,7 +17,17 @@ html {
 }
 @media (min-width: 1440px) {
   html {
-    font-size: 20px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    font-size: 26px;
   }
 }
 
@@ -28,6 +40,7 @@ html {
   margin: 0 auto;
   border-radius: 2rem;
   border: none;
+  box-shadow: -5px 5px 48px -9px #f25f3a;
 }
 
 .artBackground {
@@ -54,6 +67,7 @@ html {
   border-radius: 2rem;
   border: none;
   display: none;
+  box-shadow: -5px 5px 48px -9px #f25f3a;
 }
 @media (min-width: 1024px) {
   .getStarted {
@@ -157,7 +171,6 @@ html {
 
 .blockHero {
   display: grid;
-  width: 100vw;
 }
 @media (min-width: 1024px) {
   .blockHero {
@@ -166,7 +179,7 @@ html {
   }
 }
 .blockHero .blockHero__hero {
-  width: 90vw;
+  width: 100vw;
   padding-top: 1.5rem;
   margin: 0 auto;
 }
@@ -226,17 +239,35 @@ html {
 .blockFunctions {
   display: grid;
 }
+@media (min-width: 1024px) {
+  .blockFunctions {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+  }
+}
 .blockFunctions .blockFunctions__title {
   text-align: center;
   font-size: 1.8rem;
   color: #242d52;
   padding: 2rem 3.5rem 0.5rem 3.5rem;
 }
+@media (min-width: 1024px) {
+  .blockFunctions .blockFunctions__title {
+    padding: 0rem 3.5rem 0.5rem 3.5rem;
+  }
+}
 .blockFunctions .blockFuntions__differentAbout {
   text-align: center;
   font-weight: 400;
   color: #9095a7;
   padding: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .blockFunctions .blockFuntions__differentAbout {
+    padding-top: 0;
+    padding-left: 3.5rem;
+    grid-row-start: 2;
+  }
 }
 .blockFunctions .blockFunctions__function {
   background-color: #ffefeb;
@@ -247,6 +278,11 @@ html {
   border-bottom-left-radius: 2rem;
   color: #1d1e25;
   margin-left: 0.8rem;
+}
+@media (min-width: 1024px) {
+  .blockFunctions .blockFunctions__function {
+    background-color: transparent;
+  }
 }
 .blockFunctions .blockFunctions__function .blockFunctions__function-number {
   color: #fafafa;
@@ -266,12 +302,27 @@ html {
   padding: 0.5rem 3rem 2rem 1rem;
 }
 
+@media (min-width: 1024px) {
+  .desktop-third {
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+}
+
 .blockQuotes {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   position: relative;
   margin: 1rem 1rem 2.5rem 1rem;
+}
+@media (min-width: 1024px) {
+  .blockQuotes {
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
 }
 .blockQuotes .blockQuotes__title {
   grid-row-start: 1;
@@ -280,6 +331,13 @@ html {
   font-weight: bolder;
   padding-bottom: 6rem;
   color: #1d1e25;
+}
+@media (min-width: 1024px) {
+  .blockQuotes .blockQuotes__title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
 }
 .blockQuotes .blockQuotes__navDots {
   /* Center the content */
@@ -290,6 +348,11 @@ html {
   margin: 0 auto;
   margin-bottom: 2rem;
   padding: 0;
+}
+@media (min-width: 1024px) {
+  .blockQuotes .blockQuotes__navDots {
+    display: none;
+  }
 }
 .blockQuotes .blockQuotes__navDots .blockQuotes__navDots-dot {
   /* Rounded border */
@@ -318,9 +381,27 @@ html {
 .blockQuotes .blockQuotes__navDots #dotFour:checked {
   background: #f25f3a;
 }
+@media (min-width: 1024px) {
+  .blockQuotes .blockQuotes__getStarted {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    margin-top: 2rem;
+  }
+}
+
+.active, .dot:hover {
+  background-color: #f25f3a;
+}
+
 .blockQuote__slides {
   display: none;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .blockQuote__slides {
+    display: grid !important;
+  }
 }
 
 .blockQuote {
@@ -329,6 +410,11 @@ html {
   text-align: center;
   padding: 4rem 0.5rem 4rem 0.5rem;
   margin-bottom: 2rem;
+}
+@media (min-width: 1024px) {
+  .blockQuote {
+    margin: 1rem;
+  }
 }
 .blockQuote .blockQuote__personAvatar {
   position: absolute;
@@ -346,14 +432,6 @@ html {
   color: #9095a7;
 }
 
-.active, .dot:hover {
-  background-color: #f25f3a;
-}
-
-.translateQuote {
-  background-color: red;
-}
-
 .blockSlogan {
   display: grid;
   background-color: #f25f3a;
@@ -363,27 +441,71 @@ html {
   color: #fafafa;
   padding: 7rem 2rem 7rem 2rem;
 }
+@media (min-width: 1024px) {
+  .blockSlogan {
+    padding: 5rem 2rem 5rem 2rem;
+    background-image: url(../../images/bg-simplify-section-desktop.svg);
+    grid-template-columns: 1fr 0.5fr;
+  }
+}
+@media (min-width: 1440px) {
+  .blockSlogan {
+    padding: 3.5rem 2rem 3.5rem 2rem;
+    background-position-x: 13rem;
+    background-position-y: -2rem;
+  }
+}
 .blockSlogan .blockSlogan__main {
   font-size: 2rem;
   text-align: center;
   padding: 0 1.5rem 1.5rem 1.5rem;
+}
+@media (min-width: 1024px) {
+  .blockSlogan .blockSlogan__main {
+    text-align: left;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .blockSlogan .blockSlogan__main {
+    margin-right: 8rem;
+    margin-left: 6rem;
+    padding-bottom: 0;
+  }
 }
 .blockSlogan .blockSlogan__getStarted {
   background-color: #fafafa;
   color: #f25f3a;
   margin: 0 auto;
 }
+@media (min-width: 1024px) {
+  .blockSlogan .blockSlogan__getStarted {
+    margin: 2rem 4rem 2rem 4rem;
+  }
+}
 
 .blockFooter {
   background-color: #1d1e25;
   display: grid;
-  width: 100vw;
+}
+@media (min-width: 1220px) {
+  .blockFooter {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    padding: 1rem 3rem 1rem 3rem;
+  }
 }
 .blockFooter .emailUpdates {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0 3rem 0;
+}
+@media (min-width: 1220px) {
+  .blockFooter .emailUpdates {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin-right: 3rem;
+  }
 }
 .blockFooter .emailUpdates__input {
   padding: 1rem 0rem 0.8rem 1.5rem;
@@ -392,12 +514,17 @@ html {
   border: none;
   border-radius: 2rem;
 }
+@media (min-width: 1220px) {
+  .blockFooter .emailUpdates__input {
+    padding: 1rem 2rem 0.8rem 1.5rem;
+  }
+}
 .blockFooter .emailUpdates__input::placeholder {
   color: #9095a7;
 }
 .blockFooter .emailUpdates__go {
   text-transform: uppercase;
-  margin-right: 1rem;
+  margin-right: 0.3rem;
 }
 
 .blockLinks {
@@ -407,6 +534,15 @@ html {
   font-weight: 400;
   color: #fafafa;
   text-align: justify;
+}
+@media (min-width: 1220px) {
+  .blockLinks {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 4rem 5rem 0 5rem;
+  }
 }
 .blockLinks .blockLinks__linkRight {
   grid-area: right;
@@ -433,20 +569,65 @@ html {
   margin: 1rem;
   padding: 1rem;
 }
+@media (min-width: 1220px) {
+  .blockSocials {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    padding: 0 0 2rem 3.5rem;
+  }
+}
 .blockSocials .blockSocials__icon img {
   width: 32px;
+}
+@media (min-width: 1220px) {
+  .blockSocials .blockSocials__icon {
+    margin-left: 1rem;
+  }
 }
 
 .blockCopyright {
   text-align: center;
+  display: grid;
+}
+@media (min-width: 1220px) {
+  .blockCopyright {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
 }
 .blockCopyright .blockCopyright__logo {
   padding-bottom: 2.5rem;
+}
+@media (min-width: 1220px) {
+  .blockCopyright .blockCopyright__logo {
+    padding: 4rem 0 3rem 2.5rem;
+  }
 }
 .blockCopyright .blockCopyright__copyright {
   font-size: 0.8rem;
   color: #9095a7;
   padding-bottom: 2rem;
+}
+@media (min-width: 1220px) {
+  .blockCopyright .blockCopyright__copyright {
+    display: none;
+  }
+}
+
+.blockCopyright__desktop {
+  font-size: 0.8rem;
+  text-align: right;
+  color: #9095a7;
+  padding-bottom: 2rem;
+  margin-right: 1.5rem;
+  display: none;
+}
+@media (min-width: 1220px) {
+  .blockCopyright__desktop {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.scss.map */

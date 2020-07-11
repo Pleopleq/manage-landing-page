@@ -2,13 +2,12 @@
 
 .blockHero{
     display: grid;
-    width: 100vw;
     @media (min-width: 1024px) {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "left right";
      }
     .blockHero__hero{
-        width: 90vw;
+        width: 100vw;
         padding-top: 1.5rem;
         margin: 0 auto;
         @media (min-width: 1024px) {
