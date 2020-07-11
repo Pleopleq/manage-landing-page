@@ -9,25 +9,35 @@
   <title>Frontend Mentor | Manage landing page</title>
 </head>
 <body class="artBackground">
-
-<nav class="blockNavBar">
-  <img src="./images/logo.svg" alt="logo" class="blockNavBar__logo">
-  <img src="./images/icon-hamburger.svg" alt="logo" class="blockNavBar__hamMenu">
-  <ul class="blockNavBar__list">
-    <li class="blocNavbar__item">Pricing</li>
-    <li class="blocNavbar__item">Product</li>
-    <li class="blocNavbar__item">About Us</li>
-    <li class="blocNavbar__item">Careers</li>
-    <li class="blocNavbar__item">Community</li>
-  </ul>
-</nav>
+  <nav class="blockNavBar">
+    <img src="./images/logo.svg" alt="logo" class="blockNavBar__logo">
+  
+    <ul class="blockNavBar__desktop">
+      <li class="blockNavbar__desktop-item">Pricing</li>
+      <li class="blockNavbar__desktop-item">Product</li>
+      <li class="blockNavbar__desktop-item">About Us</li>
+      <li class="blockNavbar__desktop-item">Careers</li> 
+      <li class="blockNavbar__desktop-item">Community</li>
+    </ul>
+  
+    <label class="blockNavBar__hamMenu">
+      <img src="./images/icon-hamburger.svg" alt="logo" >
+      <ul class="blockNavBar__list dropdown desktop-menu">
+        <li class="blocNavbar__item">Pricing</li>
+        <li class="blocNavbar__item">Product</li>
+        <li class="blocNavbar__item">About Us</li>
+        <li class="blocNavbar__item">Careers</li> 
+        <li class="blocNavbar__item">Community</li>
+      </ul>
+  </label>
+    <button class="getStarted">Get Starded</button>
+  </nav>
     <!-- GRAPHS -->
 
   <main class="blockHero"> 
     <img src="./images/illustration-intro.svg" alt="graphs header" class="blockHero__hero">
-  
-    <!-- CALL TO ACTION -->
 
+    <!-- CALL TO ACTION -->
 
  <section class="blockCTA">
   <h1 class="blockCTA__title">Bring everyone together to build better products.</h1> 
@@ -37,7 +47,7 @@
   </p> 
   <button class="blockCTA__getStarted">Get Started</button>
   </section>
-  </main>
+</main>
     <!-- FUNCTION OF PRODUCT -->
 
   <section class="blockFunctions">
@@ -48,6 +58,7 @@
     product teams.
     </p> 
 
+  <div class="desktop-first">
     <h3 class="blockFunctions__function">
       <span class="blockFunctions__function-number">01</span>  
       Track company-wide progress
@@ -57,7 +68,9 @@
       tracking progress at the milestone level all the way done to the 
       smallest of details. Never lose sight of the bigger picture again.
     </p>
+  </div>
 
+  <div class="desktop-second">
     <h3 class="blockFunctions__function">
       <span class="blockFunctions__function-number">02</span>
       Advanced built-in reports
@@ -67,7 +80,9 @@
       goals. Our customisable dashboard helps you build out the reports 
       you need to keep key stakeholders informed.
     </p>
+  </div>
 
+  <div class="desktop-third">
     <h3 class="blockFunctions__function">
       <span class="blockFunctions__function-number">03</span>
       Everything you need in one place
@@ -77,13 +92,14 @@
       track tasks and share documents. Manage offers an all-in-one team 
       productivity solution.
     </p>
-  </section>
+  </div>
+</section>
 
   <!-- CUSTOMER QUOTES -->
 
   <section class="blockQuotes">
     <h2 class="blockQuotes__title">What they’ve said</h2>
-  <div class="blockQuote__one">
+  <div class="blockQuote__slides">
     <div class="blockQuote">
       <img src="./images/avatar-anisha.png" alt="person avatar" class="blockQuote__personAvatar">
       <p class="blockQuote__personName">Anisha Li</p>
@@ -93,7 +109,7 @@
       </p>
     </div>
   </div>
-  <div class="blockQuote__two">
+  <div class="blockQuote__slides">
     <div class="blockQuote">
       <img src="./images/avatar-ali.png" alt="person avatar"  class="blockQuote__personAvatar">
       <p class="blockQuote__personName">Ali Bravo</p>
@@ -105,7 +121,7 @@
     </div>
   </div>
 
-  <div class="blockQuote__three">
+  <div class="blockQuote__slides">
     <div class="blockQuote">
       <img src="./images/avatar-richard.png" alt="person avatar" class="blockQuote__personAvatar">
       <p class="blockQuote__personName">Richard Watts</p>
@@ -116,7 +132,7 @@
     </div>
   </div>
 
-  <div class="blockQuote__four">
+  <div class="blockQuote__slides">
     <div class="blockQuote">
       <img src="./images/avatar-shanai.png" alt="person avatar" class="blockQuote__personAvatar">
       <p class="blockQuote__personName">Shanai Gough</p>
@@ -128,10 +144,10 @@
   </div>
 
     <div class="blockQuotes__navDots">
-      <label for="dotOne" class="blockQuotes__navDots-dot"></label>
-      <label for="dotTwo" class="blockQuotes__navDots-dot"></label>
-      <label for="dotThree" class="blockQuotes__navDots-dot"></label>
-      <label for="dotFour" class="blockQuotes__navDots-dot"></label>
+      <label for="dotOne" class="blockQuotes__navDots-dot" onclick="currentSlide(1)"></label>
+      <label for="dotTwo" class="blockQuotes__navDots-dot" onclick="currentSlide(2)"></label>
+      <label for="dotThree" class="blockQuotes__navDots-dot" onclick="currentSlide(3)"></label>
+      <label for="dotFour" class="blockQuotes__navDots-dot" onclick="currentSlide(4)"></label>
     </div>
     <button class="blockQuotes__getStarted">Get Started</button>
   </section>
@@ -198,6 +214,10 @@
     </div>
     <p class="blockCopyright__copyright">Copyright 2020. All Rights Reserved</p>
   </div>
+  <div class="blockCopyright__desktop">    
+    <p class="blockCopyright__desktop-copy">Copyright 2020. All Rights Reserved</p>
+  </div>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
